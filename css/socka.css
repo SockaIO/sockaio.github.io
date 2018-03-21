@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+#game {
+    --aspect-ratio: 1.777777;
+    max-width: 1280px;
+    max-height: 720px;
+}
+
+@media (aspect-ratio: 16/10) {
+  #game {
+    --aspect-ratio: 1.6;
+    max-width: 1280px;
+    max-height: 800px;
+  }
+}
+
+body {
+  background-color: #236654;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto";
+  color: #051316;
+}
+
+a {
+  color: #052450;
+}
+
+/* Needed by the game engine */
+#game:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+#game {
+  margin-top: 2em;
+  height: 75vh !important;
+  width: calc(var(--aspect-ratio) 75vh) !important;
+}
+
+#information {
+  max-width: 800px;
+  text-align: justify;
+}
+
+#controls {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#controls table {
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: 1px solid #092026;
+}
+
+table tr:first-child {
+  border-top: 1px solid #092026;
+  border-bottom: 2px solid #092026;
+}
+
+th {
+  text-align: center;
+}
+
+table td,
+table th{
+  padding-left: 0.8em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+}
+
+kbd {
+  border: 1px solid silver;
+  background: #7b978e;
+  border-radius: 0.4em;
+  padding: 0.1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+kbd:not(:last-child) {
+  margin-right: 0.5em;
+}

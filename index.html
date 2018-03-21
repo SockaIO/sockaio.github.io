@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Socka - Dance Everywhere</title>
+    <link rel="stylesheet" href="css/socka.css" />
+    
+</head>
+<body>
+
+  <div>
+    <input id="hiddenInput" type="text" style="position:absolute;left:-1000px;"></input>
+    <canvas id="game"></canvas>
+  </div>
+
+  <div id="information">
+    <div id="howto">
+      <h1>Controls</h1>
+
+      <div id="controls">
+          <table>
+            <tr>
+              <th colspan="2">Game</th>
+            </tr>
+            <tr>
+              <td>Fullscreen</td>
+              <td><kbd>F9</kbd></td>
+            </tr>
+            <tr>
+              <td>Reset Settings</td>
+              <td><kbd>F8</kbd></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">Player 1</th>
+            </tr>
+            <tr>
+              <td>Back</td>
+              <td><kbd>Esc</kbd></td>
+            </tr>
+            <tr>
+              <td>Start</td>
+              <td><kbd>&crarr;</kbd></td>
+            </tr>
+            <tr>
+              <td>Directions</td>
+              <td><kbd>&larr;</kbd><kbd>&uarr;</kbd><kbd>&rarr;</kbd><kbd>&darr;</kbd></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <th colspan="2">Player 2</th>
+            </tr>
+            <tr>
+              <td>Back</td>
+              <td><kbd>Q</kbd></td>
+            </tr>
+            <tr>
+              <td>Start</td>
+              <td><kbd>E</kbd></td>
+            </tr>
+            <tr>
+              <td>Directions</td>
+              <td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+    <p>These are the default settings. You can customize the mapping for your <em>keyboard</em> or <em>dancepad</em> from the option menu.</p>
+
+    <div id="about">
+      <h1>About</h1>
+
+      <p>Socka is a JavaScript dance and rythm game similar to Dance Dance Revolution. It supports up to two players.</p>
+
+      <p>It is compatible with the most common song formats (SM, DWI and SSC). The files can be retrieved from any compatible server over HTTP.</p>
+
+      <p>It also features support for gamepads and dancepads for more accurate gameplay.</p>
+
+      <p>You can find more technical information <a href="about">here</a>.</p>
+
+    </div>
+
+    <div id="credits">
+      <h1>Acknowledgements</h1>
+
+      <p>Socka has been lovingly developped by Th3oSMith and Ningirsu. The original graphics are from <a href="https://himeija.com">Himeija</a>.</p>
+
+      <p>It is based on <a href="https://www.stepmania.com/">Stepmania</a> and reuse some of its graphic assets under the <a href="http://opensource.org/licenses/MIT">MIT License</a> and songs under the <a href="https://creativecommons.org/"> CC-NC license</a>.</p>
+
+      <p>The fonts used are <a href="https://www.dafont.com/fr/clemente-pd.font">Clemente</a> and <a href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto">Roboto</a> (under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>).
+
+      <p></p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/assets/app.bundle.js"></script>
+</body>
+</html>
