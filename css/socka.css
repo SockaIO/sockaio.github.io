@@ -36,6 +36,8 @@ a {
 #game:-webkit-full-screen {
   width: 100vw !important;
   height: 100vh !important;
+  max-width: inherit;
+  max-height: inherit;
 }
 
 #gameContainer {
