@@ -38,6 +38,7 @@ a {
   height: 100vh !important;
   max-width: inherit;
   max-height: inherit;
+  box-shadow: none;
 }
 
 #gameContainer {
@@ -56,6 +57,11 @@ a {
   height: 75vh !important;
   width: calc(var(--aspect-ratio) 75vh) !important;
   box-shadow: 2px 2px 10px 5px #091e0f;
+}
+
+/* The fullscreen is choppy in FF if there is a box shadow */
+#game:-moz-full-screen {
+  box-shadow: none;
 }
 
 #information {
